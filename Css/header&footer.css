@@ -1,0 +1,60 @@
+header {
+    display: flex;
+    gap: 40px;
+    padding: 0px 50px;
+    color: white;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    border-radius: 9px;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+li:after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #4271d5 0%, #ffffff 100%);
+    position: absolute;
+    left: 100%;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.pages {
+    color: black;
+    text-decoration: none;
+}
+
+.contact {
+    font-weight: 600 !important;
+    border: none !important;
+    /* color: black !important; */
+}
+
+.contact:hover {
+    color: black !important;
+    background-color: lightgreen !important;
+}
+
+footer {
+    padding: 15px;
+}
